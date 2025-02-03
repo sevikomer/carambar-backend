@@ -34,3 +34,16 @@ POST /api/blagues : Crée une nouvelle blague.
 
 Documentation Swagger
 Tu peux consulter la documentation Swagger de l'API à l'adresse suivante : http://localhost:3000/api-docs.
+
+Technologies utilisées
+Node.js
+Express
+Sequelize (ORM pour SQLite)
+SQLite (base de données)
+Swagger (documentation API)
+
+Contributions
+Les contributions sont les bienvenues ! Si tu souhaites contribuer, n'hésite pas à ouvrir une pull request ou à signaler des bugs.
+
+Auteur
+Omer SEVIK
