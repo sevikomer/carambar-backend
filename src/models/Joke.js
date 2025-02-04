@@ -11,7 +11,7 @@ const Joke = sequelize.define("Joke", {
         allowNull: false
     }
 }, {
-    tableName: "Jokes", // Vérifie que le nom correspond à ta base
+    tableName: "Jokes",
 });
 
 module.exports = Joke;

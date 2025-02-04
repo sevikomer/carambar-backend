@@ -2,8 +2,6 @@ const express = require('express');
 const { getJokes, getJokeById, getRandomJoke, createJoke } = require('../controllers/jokeController');
 const router = express.Router();
 
-console.log("Définition des routes pour les blagues");
-
 /**
  * @swagger
  * /api/blagues/random:

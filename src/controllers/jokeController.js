@@ -27,19 +27,15 @@ exports.getJokeById = async (req, res) => {
 // Récupérer une blague aléatoire
 exports.getRandomJoke = async (req, res) => {
     try {
-        console.log("Tentative de récupération d'une blague aléatoire");
 
         // Requête pour récupérer une blague aléatoire
         const randomJoke = await Joke.findOne({
-            order: sequelize.literal('RANDOM()')  // Fonction SQLite RANDOM() pour obtenir une ligne aléatoire
+            order: sequelize.literal('RANDOM()')
         });
 
         if (!randomJoke) {
-            console.log("Aucune blague trouvée.");
             return res.status(404).json({ error: "No jokes found" });
         }
-
-        console.log("Blague trouvée:", randomJoke);
         res.json(randomJoke);
     } catch (error) {
         console.error("Erreur lors de la récupération de la blague aléatoire:", error);
